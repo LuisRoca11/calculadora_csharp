@@ -1,0 +1,11 @@
+C:\Users\luis1\source\repos\calculadora_Csharp\calculadora_Csharp\bin\Debug\calculadora_Csharp.exe.config
+C:\Users\luis1\source\repos\calculadora_Csharp\calculadora_Csharp\bin\Debug\calculadora_Csharp.exe
+C:\Users\luis1\source\repos\calculadora_Csharp\calculadora_Csharp\bin\Debug\calculadora_Csharp.pdb
+C:\Users\luis1\source\repos\calculadora_Csharp\calculadora_Csharp\obj\Debug\calculadora_Csharp.csproj.AssemblyReference.cache
+C:\Users\luis1\source\repos\calculadora_Csharp\calculadora_Csharp\obj\Debug\calculadora_Csharp.Form1.resources
+C:\Users\luis1\source\repos\calculadora_Csharp\calculadora_Csharp\obj\Debug\calculadora_Csharp.Properties.Resources.resources
+C:\Users\luis1\source\repos\calculadora_Csharp\calculadora_Csharp\obj\Debug\calculadora_Csharp.csproj.GenerateResource.cache
+C:\Users\luis1\source\repos\calculadora_Csharp\calculadora_Csharp\obj\Debug\calculadora_Csharp.csproj.CoreCompileInputs.cache
+C:\Users\luis1\source\repos\calculadora_Csharp\calculadora_Csharp\obj\Debug\calculadora_Csharp.exe
+C:\Users\luis1\source\repos\calculadora_Csharp\calculadora_Csharp\obj\Debug\calculadora_Csharp.pdb
+C:\Users\luis1\source\repos\calculadora_Csharp\calculadora_Csharp\obj\Debug\calculadora_Csharp.exe.config
