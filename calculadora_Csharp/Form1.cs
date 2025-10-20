@@ -13,7 +13,7 @@ namespace calculadora_Csharp
     public partial class Form1 : Form
     {
         double num1 = 0;
-        double num2= 0;
+        double num2 = 0;
         string operacion = "";
 
         public Form1()
@@ -23,7 +23,7 @@ namespace calculadora_Csharp
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            if (txtDisplay.Text=="0")
+            if (txtDisplay.Text == "0")
             {
                 txtDisplay.Text = "1";
             }
@@ -31,13 +31,13 @@ namespace calculadora_Csharp
             {
                 txtDisplay.Text = txtDisplay.Text + "1";
             }
-                
+
 
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            if (txtDisplay.Text=="0")
+            if (txtDisplay.Text == "0")
             {
                 txtDisplay.Text = "2";
             }
@@ -49,7 +49,7 @@ namespace calculadora_Csharp
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            if (txtDisplay.Text=="0")
+            if (txtDisplay.Text == "0")
             {
                 txtDisplay.Text = "3";
             }
@@ -133,9 +133,9 @@ namespace calculadora_Csharp
 
         private void btn0_Click(object sender, EventArgs e)
         {
-            if (txtDisplay.Text!="0")
+            if (txtDisplay.Text != "0")
             {
-                txtDisplay.Text =txtDisplay.Text + "0";
+                txtDisplay.Text = txtDisplay.Text + "0";
             }
         }
 
@@ -143,7 +143,71 @@ namespace calculadora_Csharp
         {
             num1 = 0;
             num2 = 0;
-            txtDisplay.Text="0";
+            txtDisplay.Text = "0";
+        }
+
+        private void btnSumar_Click(object sender, EventArgs e)
+        {
+            operacion = "+";
+            num1 = double.Parse(txtDisplay.Text);
+            txtDisplay.Text = "0";
+
+        }
+
+        private void btnRestar_Click(object sender, EventArgs e)
+        {
+            operacion = "-";
+            num1 = double.Parse(txtDisplay.Text);
+            txtDisplay.Text = "0";
+        }
+
+        private void btnMultiplicar_Click(object sender, EventArgs e)
+        {
+            operacion = "*";
+            num1 = double.Parse(txtDisplay.Text);
+            txtDisplay.Text = "0";
+        }
+
+        private void btnDividir_Click(object sender, EventArgs e)
+        {
+            operacion = "/";
+            num1 = double.Parse(txtDisplay.Text);
+            txtDisplay.Text = "0";
+        }
+
+        private void btnIgual_Click(object sender, EventArgs e)
+        {
+            switch (operacion)
+            {
+                case "+":
+                    num2 = double.Parse(txtDisplay.Text);
+                    txtDisplay.Text = $"{num1 + num2}";
+                    break;
+                case "-":
+                    num2 = double.Parse(txtDisplay.Text);
+                    txtDisplay.Text = $"{num1 - num2}";
+                    break;
+                case "*":
+                    num2 = double.Parse(txtDisplay.Text);
+                    txtDisplay.Text = $"{num1 * num2}";
+                    break;
+                case "/":
+                    num2 = double.Parse(txtDisplay.Text);
+                    txtDisplay.Text = $"{num1 / num2}";
+                    break;
+            }
+        }
+
+        private void btnPunto_Click(object sender, EventArgs e)
+        {
+            if (txtDisplay.Text == "0")
+            {
+                txtDisplay.Text = "0.";
+            }
+            else if (!txtDisplay.Text.Contains("."))
+            {
+                txtDisplay.Text += ".";
+            }
         }
     }
 }
